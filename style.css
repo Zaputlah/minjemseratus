@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    /* Mengatur latar belakang halaman menjadi hitam */
+}
+
+#minjemButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: black;
+    /* Mengatur latar belakang tombol menjadi hitam */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    filter: blur(5px);
+    /* Efek blur awal */
+}
+
+#minjemPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#minjemPopup p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#closePopup {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#closePopup:hover {
+    background-color: #2980b9;
+}
+
+#minjemButton:hover {
+    filter: none;
+    /* Menghapus efek blur ketika tombol diarahkan */
+}
